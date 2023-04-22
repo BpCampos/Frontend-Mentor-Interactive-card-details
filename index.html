@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="backgroundImage"></div>
+      <div class="cards-img">
+        <p id="number">NUMBER</p>
+        <p id="name" style="text-transform: uppercase">NAME</p>
+        <p id="month">MM</p>
+        <p>/</p>
+        <p id="year">YY</p>
+        <p id="cvc">CVC</p>
+        <img class="card-img-front" src="./images/bg-card-front.png" alt="" />
+        <img class="card-img-back" src="./images/bg-card-back.png" alt="" />
+      </div>
+      <div class="card-info">
+        <form class="card-info-form">
+          <label for="nameInput">CARDHOLDER NAME</label>
+          <input id="nameInput" type="text" style="text-transform: uppercase" />
+          <p id="nameError"></p>
+          <label for="numberInput">CARD NUMBER</label>
+          <input id="numberInput" type="text" maxlength="19" />
+          <p id="numberError"></p>
+          <section class="card-date-info">
+            <div class="date">
+              <label for="">EXP. DATE (MM/YY)</label>
+              <div class="date-input">
+                <div>
+                  <input id="monthInput" type="text" placeholder="MM" maxlength="2" />
+                  <p id="monthError"></p>
+                </div>
+                <div>
+                  <input id="yearInput" type="text" placeholder="YY" maxlength="2" />
+                  <p id="yearError"></p>
+                </div>
+              </div>
+            </div>
+            <div class="cvc">
+              <label for="">CVC</label>
+              <input id="cvcInput" type="text" maxlength="3" />
+              <p id="cvcError"></p>
+            </div>
+          </section>
+          <button id="confirm">Confirm</button>
+        </form>
+      </div>
+      <div class="cardAdded finished">
+        <img src="./images/icon-complete.svg" alt="" />
+        <h1>THANK YOU!</h1>
+        <p>We've added your card details</p>
+        <button id="continue">Continue</button>
+      </div>
+      <script src="./card.js"></script>
+    </main>
+  </body>
+</html>

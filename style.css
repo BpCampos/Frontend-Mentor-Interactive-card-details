@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  display: flex;
+}
+
+.backgroundImage {
+  background-image: url("./images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 100vh;
+}
+
+.cards-img {
+  position: relative;
+  right: 450px;
+}
+
+.cards-img p {
+  position: absolute;
+  z-index: 1;
+  top: 190px;
+  left: 150px;
+}
+
+.cards-img p:nth-child(1) {
+  top: 300px;
+  left: 200px;
+  font-size: 1.9rem;
+  color: white;
+}
+
+.cards-img p:nth-child(2) {
+  top: 380px;
+  left: 160px;
+  font-size: 1rem;
+  color: white;
+  white-space: nowrap;
+}
+
+.cards-img p:nth-child(3) {
+  top: 380px;
+  left: 442px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.cards-img p:nth-child(4) {
+  top: 380px;
+  left: 480px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.cards-img p:nth-child(5) {
+  top: 380px;
+  left: 496px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.cards-img p:nth-child(6) {
+  top: 566px;
+  left: 580px;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+}
+
+.card-img-front,
+.card-img-back {
+  position: absolute;
+}
+
+.card-img-front {
+  top: 190px;
+  left: 120px;
+}
+
+.card-img-back {
+  bottom: 210px;
+  left: 230px;
+}
+
+.card-info {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-info-form {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.card-info-form p {
+  margin: 0;
+  color: red;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.card-info-form label {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.card-info-form input {
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.card-date-info {
+  display: flex;
+  justify-content: center;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.date-input {
+  display: flex;
+}
+
+.date-input div {
+  width: 60%;
+  height: 90px;
+}
+
+.date-input input {
+  width: 50%;
+}
+
+.cvc {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.card-info-form button {
+  padding: 17px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  background-color: rgb(39, 6, 70);
+  color: white;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+/** Added card page */
+
+.cardAdded {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardAdded img {
+  width: 70px;
+}
+
+.cardAdded button {
+  padding: 17px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  background-color: rgb(39, 6, 70);
+  color: white;
+  width: 30%;
+  margin-top: 30px;
+}
+
+.finished {
+  display: none;
+}
